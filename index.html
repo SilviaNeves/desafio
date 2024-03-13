@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class= "logo_alura" src="imagens/imagens/logo_alura.jpg" alt="Logo da Alura">
+    </header>
+
+    <main id="principal">
+       <section class="texto-botoes">
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            
+            <div id= "conjunto-botoes">
+                <div class="informação">
+                    <img id="imagem" src="imagens/imagens/ponto exclamação.png">
+                </div>
+                    <div>
+                    <button  class="botoes" id="botao1" onclick="btnEncriptar()" class="btn-criptografar">Criptografar</button>
+                    <button  class="botoes" id="botao2" onclick="btnDesencriptar()" class="btn-desencriptografar">Descriptografar</button>
+                    </div>
+            </div>
+        </section>
+
+        <section id="DivSomeAparece">
+            <div id="some" style="display: block;">
+                <img src="imagens/imagens/boneco.jpg">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div id="aparece" style="display: none;">
+                <textarea id="mensagem" cols="20" rows="10"></textarea>
+                <button onclick="btncopiar()" class="btn-copiar">Copiar</button>
+            </div>
+       </section>
+    </main>
+
+    <footer>Desenvolvido por <a href="https://github.com/SilviaNeves">Silvia Neves</a></footer>
+    <script src="script.js"></script>
+</body>
+</html>
